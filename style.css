@@ -1,0 +1,30 @@
+*{ 
+padding: 0%; /*Espaçamento Interno*/
+margin: 0%; /*Espaçamento Externo*/
+background-color: #1a1a1a;
+}
+
+
+li a{
+text-decoration: none; /*Sublinhado*/
+font-size: 20px; /*Tamanho da Fonte*/
+color: #ffffff; /*Cor da Fonte*/
+
+}
+
+li{
+list-style: none; /*Pontuação*/
+
+}
+
+#logo{
+height: 100px; /*Altura da Imagem*/
+width: 180px; /*Largura da Imagem*/
+
+}
+
+ul{
+    display: flex; /*Alinhamento*/
+    flex-direction: row; /*Horizontal*/
+
+}
