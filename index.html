@@ -4,35 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Gamer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-   <header>
-<nav>
-    <div>
-        <img id="logo" src="assets/logo.png" alt="logotipo">
+    <header>
+        <nav class="menu">
+            <div class="caixa-img-logo">
+                <img id="logo" src="./assets/logo.png" alt="">
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Produtos</a>
+                </li>
+                <li>
+                    <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+            
+            <div class="caixa-icone">
+                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-wallet2"></i>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+<section class="section-center">
+        <div class="banner">
+            <div class="caixa-estrutura">
+                <p class="texto-banner">Venha ver esse lindo banner com um controle nele!</p>
+                <button class="btn-menu">Veja Mais.</button>
+            </div>
+</section>
+<section>
+    <div class="estrutura-titulo">
+        <p class="titulo-primario">Mais Vendidos</p>
     </div>
-    <ul>
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Produtos</a>
-        </li>
-        <li>
-            <a href="#">Sobre Nós</a>
-        </li>
-        <li>
-            <a href="#">Contato</a>
-        </li>
-    </ul>
-</nav>
-   </header> 
-   <main>
+    <div class="carousel">
+        <div class="card">
+            <div class="card-img">IMG</div>
+            <div class="texto-card">$4.300,00</div>
+        </div>
+    </div>
+</section>
+        </div>
 
-   </main>
-   <footer>
-
-   </footer>
+    </main>
+    <footer></footer>
+    
 </body>
 </html>

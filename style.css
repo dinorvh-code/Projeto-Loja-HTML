@@ -1,30 +1,92 @@
-*{ 
-padding: 0%; /*Espaçamento Interno*/
-margin: 0%; /*Espaçamento Externo*/
-background-color: #1a1a1a;
+body{
+  padding: 0;  /*Espaço Interno*/
+  margin: 0; /*Espaço Externo*/
+  background-color: #292929;
 }
 
-
 li a{
-text-decoration: none; /*Sublinhado*/
-font-size: 20px; /*Tamanho da Fonte*/
-color: #ffffff; /*Cor da Fonte*/
-
+  text-decoration: none; /*Sublinhado*/
+  font-size: 20px; /*Tamanho da Fonte*/
+  color: #fff; /*Cor da Fonte*/
+  padding: 20px; /*Espaco Interno*/
 }
 
 li{
-list-style: none; /*Pontuação*/
-
-}
-
-#logo{
-height: 100px; /*Altura da Imagem*/
-width: 180px; /*Largura da Imagem*/
-
+  display: flex; /*Alterar Layout*/
+  flex-direction: row; /*Lateralizar*/
 }
 
 ul{
-    display: flex; /*Alinhamento*/
-    flex-direction: row; /*Horizontal*/
+  display: flex; /*Alterar Layout*/
+  margin-right: 75px; /*Espaço Lado Direito*/
+}
 
+.menu{
+  display: flex; /*Alterar Layout*/ 
+  justify-content: space-around; /*Espaço ao Redor*/
+}
+
+.caixa-img-logo img{
+  height: 90px; /*Altura*/
+  width: 140px; /*Largura*/
+}
+
+.bi{
+  font-size: 30px; /*Tamanho da Fonte*/
+  color: #4c544c; /*Cor da Fonte*/
+}
+
+.caixa-icone{
+  display: flex;
+  align-items: center;
+}
+
+.banner{
+  background-image: url("./assets/banner.png"); /*Imagem como Plano de Fundo*/
+  background-repeat: no-repeat; /*como uma imagem de fundo deve se comportar em relação à repetição*/
+  background-size: cover; /*define o tamanho da imagem de fundo de um elemento*/
+  height: 500px; /*Altura*/
+  width: 1000px; /*Largura*/
+  border-radius: 25px; /*Borda*/
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.texto-banner{
+  font-size: 25px; 
+  color: #ffffff;
+}
+
+.btn-menu{
+  width: 145px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #333333;
+  color: #ffffff;
+  font-weight: bold; 
+  font-size: 19px;
+  border: none;
+  margin-top: 25px;
+}
+
+.section-center{
+  display: flex;
+justify-content: center;
+}
+
+.caixa-estrutura{
+  width: 220px; /*Largura*/
+  padding: 35px; /*Espaço Interno*/
+}
+
+.estrutura-titulo{
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-primario{
+color: #ffffff; /*Cor*/
+font-size: 40px; /*Tamanho*/
+font-weight: 700px; /*Espessura*/
 }
