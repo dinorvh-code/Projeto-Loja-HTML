@@ -8,14 +8,14 @@ background-color: #1a1a1a;
 }
 
 li a{
-text-decoration: none; /*Remove o sublinhado */
-font-size: 20px; /* Tamanho da font*/
-color: #ffffff; /*Mudar a cor da font*/
+text-decoration: none; /*Sublinhado*/
+font-size: 20px; /*Tamanho*/
+color: #ffffff; /*Cor*/
 padding: 20px;
 }
 
 li{
-list-style: none; /* Remover formartação da lista*/
+list-style: none; /*Pontuação*/
 }
 
 #logo{
@@ -24,8 +24,8 @@ width: 140px; /*Largura*/
 }
 
 ul{
-display: flex; /*Indica a prpriedade FlexBox*/
-flex-direction: row; /*Colocar os elementos na horizontal ou na vertical*/
+display: flex; /*Organização Interna*/
+flex-direction: row; /*Direção*/
 }
 
 .menu{
@@ -46,14 +46,19 @@ color: #4c544c;
 }
 
 .container{
-width: 100%; /* Garante que o container ocupe 100% da largura do elemento pai */
-max-width: 1200px; /* Define a largura máxima que o container pode atingir */
-margin: 0 auto; /* Centraliza o container horizontalmente */
-padding: 0 15px; /* Adiciona um espaçamento nas laterais para evitar que o conteúdo fique colado na tela */
-} 
+  width: 100%; /* Garante que o container ocupe 100% da largura do elemento pai */
+  max-width: 1200px; /* Define a largura máxima que o container pode atingir */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  padding: 0 15px; /* Adiciona um espaçamento nas laterais para evitar que o conteúdo fique colado na tela */
+  } 
 
-.banner{
-background-image:url("./assets/banner.png");
+.section-center{
+display: flex;
+justify-content: center;
+}
+
+.banner01{
+background-image: url("assets/banner01.png");
 background-repeat: no-repeat;
 background-size: cover;
 height: 500px;
@@ -63,12 +68,17 @@ display: flex;
 align-items: center;
 }
 
-.texto-banner{
+.texto-banner01{
+width: 220px;
+padding: 35px;
+}
+
+.paragrafo-banner01{
 font-size: 25px;
 color: #ffffff;
 }
 
-.btn-menu{
+.btn-banner01{
 width: 145px;
 height: 40px;
 border-radius: 30px;
@@ -80,12 +90,7 @@ font-size: 19px;
 margin: 25px;
 }
 
-.caixa-texto-banner{
-width: 220px;
-padding: 35px; /*Espaçamento interno*/
-}
-
-.section-center{
+.estutura-titulo{
 display: flex;
 justify-content: center;
 }
@@ -97,29 +102,24 @@ font-weight:700;
 padding: 60px;
 }
 
-.estutura-titulo{
+.carousel{
 display: flex;
+flex-direction: row;
 justify-content: center;
+gap: 15px;
 }
 
 .produtos{
 height: 350px;
 width: 190px;
 }
-
+  
 .valor{
 font-weight: bold;
 font-size: 20px;
 color: #ffffff;
 display: flex;
 justify-content: center;
-}
-
-.carousel{
-display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 15px;
 }
 
 .cores{
@@ -154,8 +154,8 @@ display: flex;
 justify-content:center;
 }
 
-.banner2{
-background-image: url(assets/banner2.png);
+.banner02{
+background-image: url("assets/banner02.png");
 background-repeat: no-repeat;
 background-size: cover;
 margin: 70px;
@@ -163,25 +163,25 @@ height: 500px;
 width: 1000px;
 border-radius: 15px;
 display: flex;
-justify-content: right;
+justify-content: end;
+
 }
 
-.texto-banner2{
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.texto-banner02{
+margin: 20px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
-.titulo-banner2{
+.paragrafo-banner02{
 font-size: 40px;
 font-weight: bold;
 color: #ffffff;
-
 }
 
-.btn-banner2{
+.btn-banner02{
 width: 145px;
 height: 40px;
 border-radius: 30px;
@@ -190,4 +190,49 @@ border: none;
 box-shadow: #1a1a1a;
 color: #ffffff;
 font-size: 15px;
+}
+
+.footer{
+  background-color: black;
+  width: 1500px;
+}
+
+.topicos-footer{
+  display: flex;
+  height: 175px;
+  width: 1000px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titulo-recurso{
+  color: #333333;
+  font-weight: bold;
+}
+
+.textos-recurso{
+  color: #ffffff;
+}
+
+.titulo-e-contact{
+  color: #333333;
+  font-weight: bold;
+}
+
+.textos-e-contact{
+  color: #ffffff;
+}
+
+.descricao{
+  height: 500px;
+  width: 1000px;
+  border-radius: 10px;
+  background-color: #333333;
+  padding: 10px;
+  margin: 10px
+}
+
+.texto-descricao{
+  color: #ffffff;
 }
